@@ -1,0 +1,10 @@
+[Unit]
+Description=xbanish
+
+[Service]
+ExecStart=/usr/bin/xbanish
+Restart=on-failure
+RestartSec=3s
+
+[Install]
+WantedBy=default.target
